@@ -139,6 +139,7 @@ class PageController extends Controller
                 'gambar' => '',
                 'jumbotronImage' => 'img/pd.png'
             );
+            
         } else {
 
             $data = array(
@@ -148,6 +149,7 @@ class PageController extends Controller
                 'jumbotronImage' => 'img/pd.png'
             );
         }
+
         return view('pages.lembaga')->with($data);
     }
 
