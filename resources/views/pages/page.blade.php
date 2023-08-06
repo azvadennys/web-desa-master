@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title')
-  Cibatu | {{ $title }}
+  Desa Talang Kering | {{ $title }}
 @endsection
 
 @section('content')

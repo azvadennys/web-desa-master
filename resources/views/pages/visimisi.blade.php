@@ -2,39 +2,55 @@
 
 @section('style')
     <style>
-      .container {
-        text-align: center;
-      }
+        .container {
+            text-align: center;
+        }
 
-      .center {
-        text-align: center;
-        list-style-position: inside;
-      }
+        .center {
+            text-align: center;
+            list-style-position: inside;
+        }
 
-      ol li {
-        margin-top: 10px;
-      }
+        ol li {
+            margin-top: 10px;
+        }
     </style>
 @endsection
 
 @section('content')
+    @include('partials.jumbotron')
 
-@include('partials.jumbotron')
-
-<div class="container">
-  <h4>VISI :</h4>
-  <p class="lead">MEWUJUDKAN DESA MANDIRI YANG BERBUDI DAN TERPUJI</p>
-  <h4>MISI:</h4>
-  <ol class="lead center">
-    <li>Meningkatkan Kinerja Perangkat Desa dan Lembaga Desa sesuai Tupoksi Masing-masing.</li>
-    <li>Meningkatkan Pelayanan Publik yang proaktif,Cepat,Tepat,dan Optimal berbasis Teknologi.</li>
-    <li>Menghadirkan Transfaransi perencanaan  dan Realisasi Anggaran.</li>
-    <li>Meningkatkan Perhatian pada Kegiatan Keagamaan ,Budaya,Sosial dan Kearipan teknologi.</li>
-    <li>Meningkatkan Pendapatan Asli desa dengan Sistem Ekonomi berbasis Kedusunan.</li>
-    <li>Menyajikan Data yang akurat,serta Pengolahan Aset Desa seacara menyeluruh.</li>
-    <li>Peningkatan Perhatian Kesejahteraan pada lemabaga Desa/Rt/RW/Kader/dll yang bersumber dari PADes.</li>
-    <li>Memberikan layanan kesehatan dan kepedulian terhadap lingkungan budaya bersih.</li>
-    <li>Membina Kewirausahaan bagi Kaum muda serta pelatihan-pelatihan Lainnya dalam Memnciptakan kegiatan Positif.</li>
-  </ol>
-</div>
+    <div class="container">
+        <h4>VISI :</h4>
+        <p class="lead">PENINGKATAN TATA KELOLA PEMERINTAHAN DESA YANG BAIK GUNA
+            MEWUJUDKAN KEHIDUPAN MASYARAKAT DESA YANG ADIL, AMAN, BERKUALITAS, SEJAHTERA, RELEGIUS DAN BERBUDAYA</p>
+        <h4>MISI:</h4>
+        <ol class="text-left ">
+            <li>Peningkatan Sistem Kerja Aparatur Pemerintahan Desa Guna Meningkatkan Kualitas Pelayanan Kepada Masvarakat
+            </li>
+            <li>Menyelenggarakan Pemerintahan Yang Bersih. Terbebas Dari Korupsi Serta Bentuk
+                Bentuk Penvelewengan Lainnya.</li>
+            <li>Penvelenggaraan Urusan Pemerintahan Desa Secara Terbuka. Dan Bertanggung Jawab
+                Sesuai Dengan Peraturan Perundang- Undangan</li>
+            <li>Meningkatkan Perekonomian Masvarakat Melalui Kelompok Tani Dan Kelompok
+                Kelompok Masvarakat Lainnva</li>
+            <li>Penguatan Budes Dan Penguatan Permodalan Bumdes</li>
+            <li>Meningkatkan Jalan-Jalan Sentral Pertanian</li>
+            <li>Pembangunan Dan Renovasi Jaringan Irigasi</li>
+            <li>Melakukan Penataan Administrasi Kependududkan</li>
+            <li>Melakukan Rasionalisasi Anggaran Desa Guna Tercapainya Apa Yang Meniadi
+                Keinginan Dari Masyarakat</li>
+            <li>Memberi Pemahaman Hukum Kepada Masvarakat Baik Hukum Formal Maupun Hukum
+                Adat</li>
+            <li>Meningkatkan Partisipati Masvrakta Dalam
+                Proses
+                - Proses Perencanaan Dan
+                Pembangunan Desa</li>
+            <li>Melaksanakan Kegiatan - Kegiatan Keagamaan secara rutin Seperti Kelompok Belajar
+                Baca Tulis Al-Qur'an Dan Majelis Ta lim.</li>
+            <li>Melakukan Kegiatan Pelestarian Budaya dan Kesenian Adat Reiang</li>
+            <li>Meningkatkan Mutu Kesejahteraan Masyarakat Untuk Mencapai Tara Kehidupan Yang
+                Lebih Layak Sehingga Menjadi Desa Yang Maju Dan Mandiri</li>
+        </ol>
+    </div>
 @endsection

@@ -46,9 +46,9 @@ class PageController extends Controller
         $database = DB::table('lembagas')->where('id', 1)->first();
         if ($database == NULL) {
             $data = array(
-                'title' => '',
-                'deskripsi' => '',
-                'gambar' => '',
+                'title' => 'Tidak ada data',
+                'deskripsi' => 'Tidak ada data',
+                'gambar' => 'Tidak ada data',
                 'jumbotronImage' => 'img/pd.png'
             );
         } else {
@@ -68,9 +68,9 @@ class PageController extends Controller
         $database = DB::table('lembagas')->where('id', 2)->first();
         if ($database == NULL) {
             $data = array(
-                'title' => '',
-                'deskripsi' => '',
-                'gambar' => '',
+                'title' => 'Tidak ada data',
+                'deskripsi' => 'Tidak ada data',
+                'gambar' => 'Tidak ada data',
                 'jumbotronImage' => 'img/pd.png'
             );
         } else {
@@ -79,7 +79,7 @@ class PageController extends Controller
                 'title' => $database->nama,
                 'deskripsi' => $database->deskripsi,
                 'gambar' => $database->gambar,
-                'jumbotronImage' => 'img/bpd.png'
+                'jumbotronImage' => 'img/pd.png'
             );
         }
         return view('pages.lembaga')->with($data);
@@ -90,9 +90,9 @@ class PageController extends Controller
         $database = DB::table('lembagas')->where('id', 3)->first();
         if ($database == NULL) {
             $data = array(
-                'title' => '',
-                'deskripsi' => '',
-                'gambar' => '',
+                'title' => 'Tidak ada data',
+                'deskripsi' => 'Tidak ada data',
+                'gambar' => 'Tidak ada data',
                 'jumbotronImage' => 'img/pd.png'
             );
         } else {
@@ -112,9 +112,9 @@ class PageController extends Controller
         $database = DB::table('lembagas')->where('id', 4)->first();
         if ($database == NULL) {
             $data = array(
-                'title' => '',
-                'deskripsi' => '',
-                'gambar' => '',
+                'title' => 'Tidak ada data',
+                'deskripsi' => 'Tidak ada data',
+                'gambar' => 'Tidak ada data',
                 'jumbotronImage' => 'img/pd.png'
             );
         } else {
@@ -134,12 +134,11 @@ class PageController extends Controller
         $database = DB::table('lembagas')->where('id', 5)->first();
         if ($database == NULL) {
             $data = array(
-                'title' => '',
-                'deskripsi' => '',
-                'gambar' => '',
+                'title' => 'Tidak ada data',
+                'deskripsi' => 'Tidak ada data',
+                'gambar' => 'Tidak ada data',
                 'jumbotronImage' => 'img/pd.png'
             );
-            
         } else {
 
             $data = array(
@@ -149,7 +148,6 @@ class PageController extends Controller
                 'jumbotronImage' => 'img/pd.png'
             );
         }
-
         return view('pages.lembaga')->with($data);
     }
 
