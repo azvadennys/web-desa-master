@@ -13,16 +13,16 @@ class CreateServicesTable extends Migration
      */
     public function up()
     {
-        Schema::create('services', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama');
-            $table->string('nik');
-            $table->string('no_wa');
-            $table->string('jenis_surat');
-            $table->string('pesan');
-            $table->timestamps();
+        // Schema::create('services', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->string('nama');
+        //     $table->string('nik');
+        //     $table->string('no_wa');
+        //     $table->string('jenis_surat');
+        //     $table->string('pesan');
+        //     $table->timestamps();
             
-        });
+        // });
     }
 
     /**
@@ -32,6 +32,6 @@ class CreateServicesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('services');
+        // Schema::dropIfExists('services');
     }
 }

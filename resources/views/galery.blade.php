@@ -16,9 +16,8 @@
     </style>
 @endsection
 
-
 @section('title')
-    Desa Talang Kering | Kabar Desa
+    Desa Talang Kering | Galery
 @endsection
 @section('content')
     <!-- Page Content -->
@@ -52,7 +51,7 @@
 
 
                 <!-- Comments Form -->
-                <div class="card my-4">
+                {{-- <div class="card my-4">
                     <h5 class="card-header">Tinggalkan Komentar:</h5>
                     <div class="card-body">
                         <form action="{{ url('/comments') }}" method="POST">
@@ -79,7 +78,7 @@
                             <button type="submit" class="btn btn-primary">Kirim</button>
                         </form>
                     </div>
-                </div>
+                </div> --}}
 
 
                 {{-- @foreach ($post->comments as $row)
@@ -101,7 +100,7 @@
         @endforeach --}}
 
                 <!-- Comment with nested comments -->
-                <div class="card my-4">
+                {{-- <div class="card my-4">
                     <h5 class="card-header">Komentar:</h5>
                     <div class="card-body">
 
@@ -127,7 +126,7 @@
                             </div>
                         @endforeach
                     </div>
-                </div>
+                </div> --}}
             </div>
 
 
@@ -138,7 +137,7 @@
                 <div class="card" style="margin-top: 50px">
                     <h5 class="card-header bg-crimson text-white">Search</h5>
                     <div class="card-body">
-                        <form class="input-group" action="{{ route('search.posts') }}" method="GET">
+                        <form class="input-group" action="{{ route('search.galeries') }}" method="GET">
                             <input name="query" type="text" class="form-control" placeholder="Cari...">
                             <span class="input-group-append">
                                 <button class="btn bg-crimson text-white" type="submit">Go!</button>

@@ -33,10 +33,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/layanan">Layanan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/transparansi">Transparansi</a>
+                    <a class="nav-link" href="/galery-desa">Galery</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/kabar-desa">Kabar Desa</a>

@@ -17,6 +17,10 @@
     </style>
 @endsection
 
+
+@section('title')
+    Desa Talang Kering | Visi & Misi
+@endsection
 @section('content')
     @include('partials.jumbotron')
 

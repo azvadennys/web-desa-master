@@ -13,12 +13,12 @@ class CreateTransparansiTable extends Migration
      */
     public function up()
     {
-        Schema::create('transparansi', function (Blueprint $table) {
-            $table->id();
-            $table->string('judul');
-            $table->string('gambar');
-            $table->timestamps();
-        });
+        // Schema::create('transparansi', function (Blueprint $table) {
+        //     $table->id();
+        //     $table->string('judul');
+        //     $table->string('gambar');
+        //     $table->timestamps();
+        // });
     }
 
     /**
@@ -28,6 +28,6 @@ class CreateTransparansiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('transparansi');
+        // Schema::dropIfExists('transparansi');
     }
 }

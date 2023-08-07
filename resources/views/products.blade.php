@@ -26,6 +26,9 @@
     </style>
 @endsection
 
+@section('title')
+    Desa Talang Kering | Produk
+@endsection
 @section('content')
     <div class="container py-5 mt-5">
         <!-- For Demo Purpose-->

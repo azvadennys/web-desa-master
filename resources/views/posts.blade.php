@@ -15,6 +15,9 @@
 @endsection
 
 
+@section('title')
+    Desa Talang Kering | Kabar Desa
+@endsection
 @section('content')
 
 {{-- @include('partials.jumbotron', ['title' => 'Kabar Desa']) --}}

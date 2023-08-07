@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
+
+Auth::routes(['register' => false, 'reset' => false]);
 
 Route::get('/', 'PageController@home');
 Route::get('visi-misi', 'PageController@visimisi');
@@ -29,20 +30,24 @@ Route::get('karang-taruna', 'PageController@kt');
 Route::get('produk-desa', 'ProductController@display');
 Route::get('produk-desa/{id}', 'ProductController@show')->name('products.product');
 
-Route::get('kabar-desa/search', 'PostsController@search' )->name('search.posts');
+Route::get('kabar-desa/search', 'PostsController@search')->name('search.posts');
 Route::get('kabar-desa', 'PostsController@all');
 Route::get('kabar-desa/{slug}', 'PostsController@show')->name('posts.post');
 Route::post('/comments', 'PostsController@comment');
 
-Route::get('transparansi', 'TransparansiController@show');
 
-Route::get('layanan', 'ServiceController@create');
-Route::get('layanan/store', 'ServiceController@store');
+Route::get('galery-desa', 'GaleryController@all');
+Route::get('galery-desa/search', 'GaleryController@search')->name('search.galeries');
+Route::get('galery-desa/{slug}', 'GaleryController@show')->name('galeries.post');
+// Route::get('transparansi', 'TransparansiController@show');
+
+// Route::get('layanan', 'ServiceController@create');
+// Route::get('layanan/store', 'ServiceController@store');
 
 
 
 // ADMIN
-Route::group(['middleware' => 'auth'], function() {
+Route::group(['middleware' => 'auth'], function () {
   Route::get('admin', 'AdminController@adminpage');
   Route::get('admin/pd', 'AdminController@pd');
   Route::get('admin/bpd', 'AdminController@bpd');
@@ -51,11 +56,9 @@ Route::group(['middleware' => 'auth'], function() {
   Route::get('admin/kt', 'AdminController@kt');
   Route::patch('lembagas/{id}', 'AdminController@editProses');
   Route::resource('admin/posts', 'PostsController');
+  Route::resource('admin/galery', 'GaleryController');
   Route::get('home', 'HomeController@index')->name('home');
-  Route::resource('admin/transparansi', 'TransparansiController');
-  Route::resource('admin/layanan', 'ServiceController');
+  // Route::resource('admin/transparansi', 'TransparansiController');
+  // Route::resource('admin/layanan', 'ServiceController');
   Route::resource('admin/produk', 'ProductController');
 });
-
-
-

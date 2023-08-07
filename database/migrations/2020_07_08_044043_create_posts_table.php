@@ -21,6 +21,15 @@ class CreatePostsTable extends Migration
             $table->string('slug');
             $table->timestamps();
         });
+
+        Schema::create('galeries', function (Blueprint $table) {
+            $table->id();
+            $table->string('judul');
+            $table->text('content');
+            $table->string('thumbnail');
+            $table->string('slug');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -31,5 +40,6 @@ class CreatePostsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('posts');
+        Schema::dropIfExists('galeries');
     }
 }

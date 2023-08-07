@@ -1,6 +1,8 @@
 <link rel="apple-touch-icon" href="apple-icon.png">
 <link rel="shortcut icon" href="favicon.ico">
 
+<link rel="icon" href="{{ asset('img/images.jpeg') }}">
+
 <link rel="stylesheet" href="{{ asset('vendor/sufee-admin/css/normalize.css') }}">
 <link rel="stylesheet" href="{{ asset('vendor/sufee-admin/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('vendor/sufee-admin/css/font-awesome.min.css') }}">
